@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+{% load staticfiles %}
+
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>HTML Template</title>
+  <title>Cat Catalog</title>
+  <link rel="stylesheet" href="{% static "css/style.css" %}"/>
 </head>
 <body>
-  <h1> Hello this is index.html! </h1>
-  {{ insert_me }}
+  <h1>Welcome to my Cat Catalog!</h1>
+  <img src="{% static "images/catlogo.png"  %}" alt="Cat Missing!">
 </body>
 </html>
